@@ -29,12 +29,10 @@ var twoSum = function (numbers, target) {
 /*
 var numbers = [];
 var size = 5; //Maximum Array size
-
 for (var i = 0; i < size; i++) {
   //Taking Input from user
   numbers[i] = prompt();
 }
-
 const target = prompt();
 
 twoSum(numbers, target);
