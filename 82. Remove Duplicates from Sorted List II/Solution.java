@@ -20,12 +20,5 @@ public class Solution {
         }
         return dummy.next;
     }
-    public static void main(String[] args) {
-        ListNode data = new ListNode();
-      
-        deleteDuplicates(data);
-       
-    }
-
 
 }
