@@ -30,8 +30,6 @@ var trapRainWater = function (heightMap) {
     for (const [dx, dy] of directions) {
       const nx = x + dx,
         ny = y + dy;
-      console.log(dx);
-      console.log(dy);
 
       if (nx >= 0 && nx < m && ny >= 0 && ny < n && !visited[nx][ny]) {
         visited[nx][ny] = true;
