@@ -11,8 +11,6 @@ function gridGame(grid) {
   for (let i = 1; i < n; i++) {
     prefixRow0[i] = prefixRow0[i - 1] + grid[0][i];
     prefixRow1[i] = prefixRow1[i - 1] + grid[1][i];
-    console.log(prefixRow0[i - 1]);
-    //console.log(prefixRow1[i]);
   }
 
   // Iterate through all possible split points
