@@ -12,6 +12,9 @@ var lengthOfLongestSubstring = function (s) {
 
     // If we have seen this character inside the current window,
     // move the left side just past its previous position.
+    console.log("when right = " + right + " and lastSeen.has(char) = " + lastSeen.has(char))
+    console.log("when right = " + right + " and lastSeen.get(char) = " + lastSeen.get(char))
+    console.log("when right = " + right + " and left= " + left)
     if (lastSeen.has(char) && lastSeen.get(char) >= left) {
       left = lastSeen.get(char) + 1;
     }
@@ -22,3 +25,6 @@ var lengthOfLongestSubstring = function (s) {
 
   return maxLength;
 };
+
+
+lengthOfLongestSubstring("pwwpw")
