@@ -3,27 +3,16 @@ var groupAnagrams = function (strs) {
 
   for (const word of strs) {
     const key = word.split('').sort().join('');
-    console.log(
-      'Word:',
-      JSON.stringify(word),
-      '| Sorted key:',
-      JSON.stringify(key),
-    );
 
     if (!groups.has(key)) {
-      console.log('New key: creating an empty group');
       groups.set(key, []);
     }
 
     groups.get(key).push(word);
-    console.log('Groups so far:', JSON.stringify(Object.fromEntries(groups)));
   }
 
   return Array.from(groups.values());
 };
-
-console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
-// Expected groups (any order): [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 
 /*
 Logic:
